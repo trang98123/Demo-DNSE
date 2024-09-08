@@ -25,7 +25,7 @@ public class WebAppManager {
             WebApp app = instances.get();
             if (app != null) {
                 instances.remove();
-             //   app.quit();
+                app.quit();
             }
         } catch (Exception e) {
             throw e;

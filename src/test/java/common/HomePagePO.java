@@ -42,7 +42,7 @@ public class HomePagePO extends WebPageBase {
 
     public boolean isElementTicketDisplayed() {
         try {
-           app.isElementDisplayed(TICKET_DISPLAYED);
+       return     app.isElementDisplayed(TICKET_DISPLAYED);
         } catch (Exception e) {
             e.printStackTrace();
         }
