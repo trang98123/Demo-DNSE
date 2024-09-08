@@ -1,4 +1,4 @@
-package com.smartosc.automation.common;
+package common;
 
 public class AutoWebApp extends WebApp {
 

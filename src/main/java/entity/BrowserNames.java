@@ -1,4 +1,4 @@
-package com.smartosc.automation.entity;
+package entity;
 
 public enum BrowserNames {
     CHROME,

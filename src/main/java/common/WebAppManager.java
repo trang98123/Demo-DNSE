@@ -1,4 +1,4 @@
-package com.smartosc.automation.common;
+package common;
 
 public class WebAppManager {
     private static ThreadLocal<WebApp> instances = new ThreadLocal<WebApp>();
@@ -25,7 +25,7 @@ public class WebAppManager {
             WebApp app = instances.get();
             if (app != null) {
                 instances.remove();
-                app.quit();
+             //   app.quit();
             }
         } catch (Exception e) {
             throw e;
