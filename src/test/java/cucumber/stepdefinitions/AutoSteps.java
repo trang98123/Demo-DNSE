@@ -19,15 +19,21 @@ public class AutoSteps {
     }
 
     /**
-     * Get Login page
+     * Get Senses Page
      *
      * @throws Exception
      */
-    public HomePagePO getHomePage() throws Exception {
-        return (HomePagePO) app.waitForPage(HomePagePO.class);
+    public SensesPagePO getSensesPage() throws Exception {
+        return (SensesPagePO) app.waitForPage(SensesPagePO.class);
     }
 
-
-
-
+    /**
+     * Get Stock Page
+     * @return
+     * @throws Exception
+     */
+    public StockPagePO getStockPage() throws Exception
+    {
+        return (StockPagePO) app.waitForPage(StockPagePO.class);
+    }
 }
