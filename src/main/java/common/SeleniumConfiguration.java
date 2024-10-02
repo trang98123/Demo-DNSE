@@ -18,17 +18,6 @@ public class SeleniumConfiguration {
         String env = SystemConfiguration.getTestEnvironment();
         return Integer.parseInt(readPropertyValue(TIMINGS_CONFIG_FILE, "implicitwait.timeout." + env.toLowerCase()));
     }
-
-    /**
-     * Get FluentWait timeout
-     * @return
-     * @throws Exception
-     */
-    public static int getFluentWaitTimeout() throws Exception {
-        String env = SystemConfiguration.getTestEnvironment();
-        return Integer.parseInt(readPropertyValue(TIMINGS_CONFIG_FILE, "fluentwait.timeout." + env.toLowerCase()));
-    }
-
     /**
      * Get FluentWait Polling time
      * @return
@@ -38,7 +27,15 @@ public class SeleniumConfiguration {
         String env = SystemConfiguration.getTestEnvironment();
         return Integer.parseInt(readPropertyValue(TIMINGS_CONFIG_FILE, "fluentwait.polling." + env.toLowerCase()));
     }
-
+    /**
+     * Get FluentWait timeout
+     * @return
+     * @throws Exception
+     */
+    public static int getFluentWaitTimeout() throws Exception {
+        String env = SystemConfiguration.getTestEnvironment();
+        return Integer.parseInt(readPropertyValue(TIMINGS_CONFIG_FILE, "fluentwait.timeout." + env.toLowerCase()));
+    }
     /**
      * Read value of a property
      * @param file
