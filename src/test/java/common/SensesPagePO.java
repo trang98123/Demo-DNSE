@@ -2,7 +2,7 @@ package common;
 
 import org.openqa.selenium.By;
 
-public class HomePagePO extends WebPageBase {
+public class SensesPagePO extends WebPageBase {
     @Override
     public void init() {
 
@@ -34,7 +34,7 @@ public class HomePagePO extends WebPageBase {
     public final static By GET_DEPARTURE_DATE_FLIGHT = By.xpath("//input[@id='departure_date_flight']");
     public final static By GET_PAGE_SOURCE = By.xpath("//pre[text()='han']");
     public final static By TICKET_DISPLAYED=By.xpath("//span[@class='hidden-xs date-text-change-depart']//span[text()='Thứ 6, 27/09/2024']");
-    public HomePagePO() throws Exception {
+    public SensesPagePO() throws Exception {
         super();
         app = WebAppManager.getWebApp(AutoWebApp.class);
         driver = app.getDriver();
