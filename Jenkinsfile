@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Log Tool version') {
       steps {
-        sh '''mvn -version
-git --version
-java --version'''
+        bat 'mvn -version'
       }
     }
 
