@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build with Maven') {
       steps {
-        sh 'mvn compile test package'
+        bat 'mvn compile test package'
       }
     }
 
