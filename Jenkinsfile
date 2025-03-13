@@ -1,22 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('log tool version') {
-      parallel {
-        stage('Log Tool version') {
-          steps {
-            sh '''mvn -version
+    stage('Log Tool version') {
+      steps {
+        sh '''mvn -version
 git --version
 java --version'''
-          }
-        }
-
-        stage('check file') {
-          steps {
-            sh 'mvn -version'
-          }
-        }
-
       }
     }
 
